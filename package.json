@@ -1,6 +1,6 @@
 {
   "name": "edp-add",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "edp-add =======",
   "main": "index.js",
   "scripts": {
@@ -11,9 +11,9 @@
     "url": "git://github.com/ecomfe/edp-add.git"
   },
   "dependencies": {
-    "edp-config": ">=0.4.2",
-    "edp-project": ">=0.4.25",
-    "edp-codegen": ">=0.4.2"
+    "edp-config": "~0.4.2",
+    "edp-project": "~0.4.25",
+    "edp-codegen": "~0.4.4"
   },
   "author": "leeight@gmail.com",
   "license": "BSD-2-Clause",
