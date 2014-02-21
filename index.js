@@ -1,20 +1,22 @@
 /***************************************************************************
- * 
+ *
  * Copyright (c) 2014 Baidu.com, Inc. All Rights Reserved
- * $Id$ 
- * 
+ * $Id$
+ *
  **************************************************************************/
- 
- 
- 
+
+
+
 /**
  * index.js ~ 2014/02/08 11:42:11
  * @author leeight(liyubei@baidu.com)
- * @version $Revision$ 
- * @description 
+ * @version $Revision$
+ * @description
  * edp-add的入口文件
  **/
-var fs = require('fs');
+var fs = require( 'fs' );
+
+var edp = require( 'edp-core' );
 
 exports.start = function (args, opts) {
     if (args.length <= 1) {
@@ -29,16 +31,7 @@ exports.start = function (args, opts) {
     if (fs.existsSync(file)) {
         if (!opts.force) {
             // 如果文件已经存在了，并且没有设置--force参数，那么询问一下是否覆盖这个文件.
-            var readline = require('readline');
-
-            var rl = readline.createInterface({
-                input: process.stdin,
-                output: process.stdout
-            });
-
-            rl.question("Overwrite existing file [y/n]? ", function(answer) {
-                rl.close();
-
+            edp.rl.prompt("Overwrite existing file [y/n]? ", function(answer) {
                 if (!(answer === 'y' || answer === 'Y')) {
                     process.exit(0);
                 }
