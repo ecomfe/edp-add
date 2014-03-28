@@ -20,7 +20,7 @@ var edp = require( 'edp-core' );
 
 exports.start = function (args, opts) {
     if (args.length <= 1) {
-        console.error("Invalid arguments.");
+        console.error( 'see edp add --help' );
         return;
     }
 
@@ -31,7 +31,7 @@ exports.start = function (args, opts) {
     if (fs.existsSync(file)) {
         if (!opts.force) {
             // 如果文件已经存在了，并且没有设置--force参数，那么询问一下是否覆盖这个文件.
-            edp.rl.prompt("Overwrite existing file [y/n]? ", function(answer) {
+            edp.rl.prompt('Overwrite existing file [y/n]? ', function(answer) {
                 if (!(answer === 'y' || answer === 'Y')) {
                     process.exit(0);
                 }
@@ -46,8 +46,7 @@ exports.start = function (args, opts) {
         var fn = require('./lib/' + type);
         fn(args, opts);
     }
-}
-
+};
 
 
 

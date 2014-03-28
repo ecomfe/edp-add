@@ -1,21 +1,20 @@
 {
-  "name": "edp-add",
-  "version": "0.0.4",
+  "name": "edpx-add",
+  "version": "1.0.0",
   "description": "edp-add =======",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "prepare": "npm ln edp-core edp-config edp-project edp-codegen"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git://github.com/ecomfe/edp-add.git"
   },
   "dependencies": {
-    "edp-core": "~0.0.1",
-    "edp-config": "~0.4.2",
-    "edp-project": "~0.4.25",
-    "edp-codegen": "~0.4.4"
+    "edp-core": "~1.0.7",
+    "edp-config": "~1.0.2",
+    "edp-project": "~0.4.31",
+    "edp-codegen": "~0.4.6"
   },
   "author": "leeight@gmail.com",
   "license": "BSD-2-Clause",
