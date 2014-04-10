@@ -1,6 +1,6 @@
 {
   "name": "edpx-add",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "edp-add =======",
   "main": "index.js",
   "scripts": {
@@ -13,7 +13,7 @@
   "dependencies": {
     "edp-core": "~1.0.12",
     "edp-config": "~1.0.2",
-    "edp-project": "~0.4.31",
+    "edp-project": "~0.5.0",
     "edp-codegen": "~0.4.6"
   },
   "author": "leeight@gmail.com",
