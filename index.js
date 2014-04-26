@@ -20,7 +20,7 @@ var edp = require( 'edp-core' );
 
 exports.start = function (args, opts) {
     if (args.length <= 1) {
-        console.error( 'see edp add --help' );
+        console.log( 'See `edp add --help`' );
         return;
     }
 
